@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="5.8.6" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\Data-Common-Contracts-Net-Core\Data.Common.Contracts\Data.Common.Contracts.csproj" />
+    <ProjectReference Include="..\Core\Core.csproj" />
+    <ProjectReference Include="..\Data.Definitions\Data.Definitions.csproj" />
+  </ItemGroup>
+
+</Project>
